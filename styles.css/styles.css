@@ -1,0 +1,238 @@
+body {
+    color: white;
+    font-family: "poppinsregular";
+    background-color: rgb(34, 33, 33);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    overflow: hidden;
+    background-image: url('../imagens/paisagem-de-montanha-3d-ao-por-do-sol.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title {
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li {
+    margin: 20px;
+    display: inline-block;
+} h1#titulo1 {
+    font-weight: 200;
+    font-family: "poppinsbold";
+    text-shadow: 1px 1px 2px rgba(169, 24, 221, 0.5);
+    color: rgb(117, 30, 163);
+    animation: brilho 2s ease-in-out infinite;
+    
+}
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+h2 {
+    font-size: 56px;
+    line-height: 10px;
+    font-family: "poppinsbold";
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+ span {
+    color: rgb(135, 38, 187);
+}
+
+p {
+    font-weight: 100;
+    color: rgb(115, 73, 115);
+    font-size: bolder;
+    font-family: "poppinslight";
+    line-height: 20px;
+    max-width: 500px;
+}
+
+img {
+    width: 600px;
+}
+
+a {
+  animation: brilho 2s ease-in-out infinite;
+    color: whitesmoke;
+
+    }
+
+
+a:hover {
+    color: blueviolet;
+    transition: 0.3s all;
+}
+
+#inscreva {
+    border: 2px solid blueviolet;
+    padding: 10px;
+    border-radius: 20px;
+} 
+#inscreva:hover {
+    background-color: #8a2be2;
+    color: white;
+}
+
+ form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+  
+  input {
+    margin-top: 20px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    font-size: 15px;
+  }
+  
+  input#submit {
+    color: rgba(254, 254, 254, 0.612);
+    height: 40px;
+    width: 230px;
+    background-color: rgb(117, 30, 163);
+    font-weight: bold;
+  }
+  input#submit:hover{
+    background-color: white;
+    color: rgb(203, 25, 223);
+  }
+
+  .wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .button {
+    margin-top: 25px;
+    min-width: 300px;
+    min-height: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #fdcaf9;
+    background: #7803cb;
+  background: linear-gradient(90deg, rgb(107, 14, 125) 0%, rgb(209, 69, 255) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(115, 3, 163, 0.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    }
+  
+  button::before {
+  content: '';
+    border-radius: 1000px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid #8223c2;
+    box-shadow: 0 0 60px rgba(173, 12, 209, 0.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .button:hover, .button:focus {
+    color: #fefeff;
+    transform: translateY(-6px);
+  }
+  
+  button:hover::before, button:focus::before {
+    opacity: 1;
+  }
+  
+  button::after {
+    content: '';
+    width: 20px; height: 20px;
+    border-radius: 100%;
+    border: 6px solid #cb0fff;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+  
+  button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 20px;
+      height: 20px;
+      opacity: 1;
+    }
+    100% {
+      width: 200px;
+      height: 200px;
+      opacity: 0;
+    }
+  }
+  
+  h1#titulo1 {
+    font-weight: 200;
+    font-family: "poppinsbold";
+    text-shadow: 1px 1px 2px rgba(169, 24, 221, 0.5);
+    color: rgb(117, 30, 163);
+    animation: brilho 2s ease-in-out infinite;
+  }
+  
+  @keyframes brilho {
+    0% {
+      text-shadow: 1px 1px 2px rgba(169, 24, 221, 0.5);
+    }
+    50% {
+      text-shadow: 2px 2px 4px rgba(169, 24, 221, 0.8);
+    }
+    100% {
+      text-shadow: 1px 1px 2px rgba(169, 24, 221, 0.5);
+    }
+  }
+  li {
+    font-weight: 200;
+    font-family: "poppinsbold";
+    color: rgb(117, 30, 163);
+    animation: liAnimation 2s ease-in-out infinite;
+  }
+  
+  @keyframes liAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+      color: rgb(223, 223, 231);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
