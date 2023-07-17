@@ -52,4 +52,18 @@
       width: 60%;
       max-width: 700px;
     }
+  } }
+  span{
+    width: 10px;
+    height: 10px; 
   }
+  h2 {
+    padding: 2px;
+    font-size: 30px;
+    line-height: 1px;
+    font-family: "poppinsbold";
+}
+p{
+  font-size: 15px;
+  color: white;
+}
